@@ -63,7 +63,7 @@ et, ci95et, ft, ci95ft, fp = fixation_probability(
 `et` and `ft` are the extinction and fixation times for mutants, averaged over `nb_sim` simulations. `ci95et` and `ci95ft` are the 95% confidence intervals on those times.
 `fp` is the mutant fixation probability estimated over `nb_sim` simulations. Demo notebook [here](Example_simulation.ipynb) for an example simulation.
 
-This code was inspired by and generalizes the implementation in the [StructuredPop Repo](https://github.com/Bitbol-Lab/Structured_pop), used in the paper [Frequent asymmetric migrations suppress natural selection in spatially structured populations](https://academic.oup.com/pnasnexus/article/2/11/pgad392/7420192) by Alia Abbara and Anne-Florence Bitbol.
+This code generalizes to heterogeneous environments the one provided in the [StructuredPop Repo](https://github.com/Bitbol-Lab/Structured_pop), used in the paper [Frequent asymmetric migrations suppress natural selection in spatially structured populations](https://academic.oup.com/pnasnexus/article/2/11/pgad392/7420192) by Alia Abbara and Anne-Florence Bitbol.
 
 ## Citation
 If you use this code in your research, please cite our preprint:

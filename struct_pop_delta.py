@@ -11,7 +11,6 @@ from numba import set_num_threads
 set_num_threads(1)
 
 
-
 #%%______________________________________Migration matrices________________________________________________
 
 
@@ -38,6 +37,7 @@ def define_clique(D,m):
                 migration_matrix[i,j]=m
         migration_matrix[i,i]=1-(D-1)*m
     return migration_matrix
+
 
 def define_cycle(D,mA,mC):
     '''
@@ -236,42 +236,30 @@ def dilution_migration_event(in_numbers,migration_matrix,K):
     '''
     D, N_types= np.shape(in_numbers)
 
-    #Numbers that will be kept at the end of the migration/dilution phase.
     new_numbers=np.zeros((D, N_types), dtype=np.int64)
 
-    #Migrants from a deme to another
     migrants_ij=np.empty(2, dtype=np.int64)
     
-    #Sample whatever comes out of deme i
     for i in range(D):
-
-        #Total number of individuals on deme i (mutants and wild-types)
         Ni=np.sum(in_numbers[i,:], dtype = np.int64)
         if Ni<1:
             print('extinct deme', i)
             
-        #Fraction of mutants in deme i
         p=in_numbers[i,0]/Ni
-
-        #Migration towards deme j
         for j in np.arange(D):
-    
             mij=migration_matrix[i,j]
 
-            #migrants from i to j, mutants and wild-types
             p0=np.float64(max(min(K*p*mij/Ni,1),0))
             p1=np.float64(max(min(K*(1-p)*mij/Ni,1),0))
             migrants_ij[0]=np.random.binomial(Ni, p0,1)[0]
             migrants_ij[1]=np.random.binomial(Ni, p1,1)[0]
 
-            #Updating the numbers in j with the migrants that arrived from i
             new_numbers[j, 0]+=migrants_ij[0]
             new_numbers[j, 1]+=migrants_ij[1]
 
     return new_numbers
 
 #%%_________________________________________Extinction or fixation____________________________________________________________
-
 
 @njit
 def extinct_mutant(numbers):
@@ -293,10 +281,6 @@ def extinct_wild(numbers):
     return True
 
 #%%____________________________________Complete simulation for one trajectory_____________________________________________
-
-#We do a number of cycles starting from inital numbers in_numbers ; until the mutant fixes or dies out
-#nb_cycles :  - can be used to stop the simulation
-
 
 @njit
 def cycle(in_numbers, migration_matrix, fitnesses, nb_cycles, growth_factor, K, start_follow_numbers, size_follow_numbers, start_cycle, print_frequency):
@@ -382,9 +366,8 @@ def cycle(in_numbers, migration_matrix, fitnesses, nb_cycles, growth_factor, K, 
 
 #%%________________________________________Fixation probability computed on several simulations_______________________________________________
 
-
 @njit
-def fixation_probability(in_numbers, folder, migration_matrix, fitnesses, nb_sim, nb_cycles, growth_factor, K, size_follow_numbers=10000, print_frequency=1, save_dynamics=False):
+def fixation_probability(in_numbers, migration_matrix, fitnesses, nb_sim, nb_cycles, growth_factor, K, size_follow_numbers=10000, print_frequency=1, save_dynamics=False):
     ''' Computes the fixation probability over several simulations, using the 'cycle' function as of above, starting from in_numbers, on nb_sim simulations.
     Parameters (see above).
 
@@ -400,7 +383,6 @@ def fixation_probability(in_numbers, folder, migration_matrix, fitnesses, nb_sim
     - proba : float
         The fixation probabilitys.
     '''
-
     fix_count=0
 
     fix_cycle=np.zeros(nb_sim)
@@ -433,7 +415,6 @@ def fixation_probability(in_numbers, folder, migration_matrix, fitnesses, nb_sim
         ci95_ec = 1.96 * np.sqrt(variance_extinction_cycle) / np.sqrt(ex_count)
     else:
         average_extinction_cycle=0
-
 
     proba = fix_count/nb_sim
 

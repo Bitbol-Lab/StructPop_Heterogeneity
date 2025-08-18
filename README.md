@@ -31,7 +31,7 @@ from struct_pop_delta import *
 
 And, after setting all parameters: 
 - The inital number of individuals in each deme `in_numbers`
-- The migration matrix `MM`
+- The migration matrix `MigMat`
 - Fitnesses `fs`
 - Number of simulations `nb_sims`
 - Number of cycles `nb_cycles`
@@ -42,7 +42,7 @@ the simulation is run with:
 ```python
 et, ci95et, ft, ci95ft, fp = fixation_probability(
       in_numbers,
-      MM,
+      MigMat,
       fs,
       nb_sim,
       nb_cycles,

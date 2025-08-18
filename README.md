@@ -54,7 +54,7 @@ et, ci95et, ft, ci95ft, fp = fixation_probability(
 ```
 
 `et` and `ft` are the extinction and fixation times for mutants, averaged over `nb_sim` simulations. `ci95et` and `ci95ft` are the 95% confidence intervals on those times.
-`fp` is the mutant fixation probability. Demo notebook [here](Example_simulation.ipynb) for an example simulation.
+`fp` is the mutant fixation probability estimated over `nb_sim` simulations. Demo notebook [here](Example_simulation.ipynb) for an example simulation.
 
 ## License
 

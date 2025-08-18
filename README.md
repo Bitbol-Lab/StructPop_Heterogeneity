@@ -1,4 +1,11 @@
 # Structured populations with heterogeneity
+<div align="center">
+
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.07.31.667961-red)](https://www.biorxiv.org/content/10.1101/2025.07.31.667961v1)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+</div>
+
 This code was used to generate figures in the paper _Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations_, by Cecilia Fruet, Arthur Alexandre, Alia Abbara, Claude Loverdo, and Anne-Florence Bitbol.
 
 ## Requirements
@@ -75,5 +82,5 @@ If you use this code in your research, please cite our preprint:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache 2.0 License.
 

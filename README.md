@@ -61,7 +61,7 @@ This code was inspired by and generalizes the implementation in the [StructuredP
 ## Citation
 If you use this code in your research, please cite our preprint:
 ```bibtex
-@article{fruet2025heterogeneity,
+@article{fruet2025environment,
   title={Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations},
   author={Cecilia Fruet and Arthur Alexandre and Alia Abbara and Claude Loverdo and Anne-Florence Bitbol},
   journal={bioRxiv},

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Code for simulation the serial dilution model.
+Code for simulating the serial dilution model.
 We consider a population with D demes and N_types types of individuals. The population composition is represented as an array e.g. [[1, 99], [0,100]] has 2 demes ; the first one has 1 mutant and 99 wild-types, the second has 100 wild-types.
 The graph structure is implemented through the migration matrix.
 '''
@@ -419,4 +419,5 @@ def fixation_probability(in_numbers, migration_matrix, fitnesses, nb_sim, nb_cyc
     proba = fix_count/nb_sim
 
     return average_extinction_cycle, ci95_ec, average_fixation_cycle, ci95_fc, proba
+
 

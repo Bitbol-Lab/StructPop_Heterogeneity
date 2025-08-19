@@ -72,7 +72,7 @@ If you use this code in your research, please cite our preprint:
   title={Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations},
   author={Cecilia Fruet and Arthur Alexandre and Alia Abbara and Claude Loverdo and Anne-Florence Bitbol},
   journal={bioRxiv},
-  pages={025.07.31.667961},
+  pages={2025.07.31.667961},
   year={2025},
   publisher={Cold Spring Harbor Laboratory},
   doi={10.1101/2025.07.31.667961},

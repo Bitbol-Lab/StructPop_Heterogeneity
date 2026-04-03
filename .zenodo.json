@@ -1,0 +1,35 @@
+{
+  "title": "Structured populations with heterogeneity",
+  "description": "Code used to generate figures for the study \"Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations\".",
+  "upload_type": "software",
+  "creators": [
+    { "name": "Fruet, Cecilia" },
+    { "name": "Alexandre, Arthur" },
+    { "name": "Abbara, Alia" },
+    { "name": "Loverdo, Claude" },
+    { "name": "Bitbol, Anne-Florence" }
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "population genetics",
+    "structured populations",
+    "environmental heterogeneity",
+    "natural selection",
+    "graph-structured populations",
+    "fixation probability",
+    "stochastic simulations"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.biorxiv.org/content/10.1101/2025.07.31.667961v2",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/Bitbol-Lab/StructPop_Heterogeneity",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ]
+}

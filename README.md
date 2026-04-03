@@ -81,12 +81,12 @@ If you use this code in your research, please cite:
 }
 
 @software{fruet2026environment_software,
-  title = {Structured populations with heterogeneity},
+  title={Structured populations with heterogeneity},
   author={Cecilia Fruet and Arthur Alexandre and Alia Abbara and Claude Loverdo and Anne-Florence Bitbol},
-  year = {2026},
-  version = {1.0.0},
-  doi = {10.5281/zenodo.19396437},
-  url = {https://doi.org/10.5281/zenodo.19396437}
+  year={2026},
+  version={1.0.0},
+  doi={10.5281/zenodo.19396437},
+  url={https://doi.org/10.5281/zenodo.19396437}
 }
 ```
 

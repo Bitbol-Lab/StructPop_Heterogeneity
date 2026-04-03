@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Structured populations with heterogeneity"
+type: software
+
+authors:
+  - family-names: "Fruet"
+    given-names: "Cecilia"
+  - family-names: "Alexandre"
+    given-names: "Arthur"
+  - family-names: "Abbara"
+    given-names: "Alia"
+  - family-names: "Loverdo"
+    given-names: "Claude"
+  - family-names: "Bitbol"
+    given-names: "Anne-Florence"
+
+abstract: >
+  Code used to generate figures for the study
+  "Environment heterogeneity creates fast amplifiers of natural selection
+  in graph-structured populations".
+
+repository-code: "https://github.com/REAL-USER/REAL-REPO"
+url: "https://github.com/REAL-USER/REAL-REPO"
+license: "Apache-2.0"
+
+keywords:
+  - population genetics
+  - structured populations
+  - environmental heterogeneity
+  - natural selection
+  - graph-structured populations
+  - fixation probability
+  - stochastic simulations
+
+references:
+  - type: article
+    title: "Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations"
+    authors:
+      - family-names: "Fruet"
+        given-names: "Cecilia"
+      - family-names: "Alexandre"
+        given-names: "Arthur"
+      - family-names: "Abbara"
+        given-names: "Alia"
+      - family-names: "Loverdo"
+        given-names: "Claude"
+      - family-names: "Bitbol"
+        given-names: "Anne-Florence"
+    journal: "bioRxiv"
+    year: 2025
+    doi: "10.1101/2025.07.31.667961"
+    url: "https://www.biorxiv.org/content/10.1101/2025.07.31.667961v1"

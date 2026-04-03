@@ -1,6 +1,7 @@
 # Structured populations with heterogeneity
 <div align="center">
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19396437.svg)](https://doi.org/10.5281/zenodo.19396437)
 [![bioRxiv](https://img.shields.io/badge/bioRxiv-2025.07.31.667961-red)](https://www.biorxiv.org/content/10.1101/2025.07.31.667961v1)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -27,8 +28,8 @@ pip install -r requirements.txt
 ## Usage
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/structured-population.git
-cd structured-population
+git clone https://github.com/Bitbol-Lab/StructPop_Heterogeneity.git
+cd StructPop_Heterogeneity
 ```
 
 In Python, import the main module:
@@ -40,7 +41,7 @@ And, after setting all parameters:
 - The inital number of individuals in each deme `in_numbers`
 - The migration matrix `mig_mat`
 - Fitnesses `fs`
-- Number of simulations `nb_sims`
+- Number of simulations `nb_sim`
 - Number of cycles `nb_cycles`
 - Growth time `t`
 - Bottleneck size `k`
@@ -66,7 +67,7 @@ et, ci95et, ft, ci95ft, fp = fixation_probability(
 This code generalizes to heterogeneous environments the one provided in the [StructuredPop Repo](https://github.com/Bitbol-Lab/Structured_pop), used in the paper [Frequent asymmetric migrations suppress natural selection in spatially structured populations](https://academic.oup.com/pnasnexus/article/2/11/pgad392/7420192) by Alia Abbara and Anne-Florence Bitbol.
 
 ## Citation
-If you use this code in your research, please cite our preprint:
+If you use this code in your research, please cite:
 ```bibtex
 @article{fruet2025environment,
   title={Environment heterogeneity creates fast amplifiers of natural selection in graph-structured populations},
@@ -77,6 +78,15 @@ If you use this code in your research, please cite our preprint:
   publisher={Cold Spring Harbor Laboratory},
   doi={10.1101/2025.07.31.667961},
   url={https://www.biorxiv.org/content/10.1101/2025.07.31.667961v1}
+}
+
+@software{fruet2026environment_software,
+  title = {Structured populations with heterogeneity},
+  author={Cecilia Fruet and Arthur Alexandre and Alia Abbara and Claude Loverdo and Anne-Florence Bitbol},
+  year = {2026},
+  version = {1.0.0},
+  doi = {10.5281/zenodo.19396437},
+  url = {https://doi.org/10.5281/zenodo.19396437}
 }
 ```
 
